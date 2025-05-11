@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page WebGIS Kota Bandung</title>
+
+<!--Link leaflet CSS-->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-easybutton@2/src/easy-
+button.css">
+<link href='https://api.mapbox.com/mapbox.js/plugins/leaflet-
+fullscreen/v1.0.1/leaflet.fullscreen.css' rel='stylesheet' />
+<link rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/leaflet.locatecontrol/dist/L.Control.Locate.min.css" />
+
+<!--Link leaflet javascript-->
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-
+20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<script src="https://cdn.jsdelivr.net/npm/leaflet-easybutton@2/src/easy-button.js"></script>
+<script src='https://api.mapbox.com/mapbox.js/plugins/leaflet-
+fullscreen/v1.0.1/Leaflet.fullscreen.min.js'></script>
+<script src="https://balladaniel.github.io/leaflet-dataclassification/leaflet-
+dataclassification.js"></script>
+
+<!--Link leaflet jquery-->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!--Bagian Header-->
+    <header id="navbar">
+        <div class="container">
+        <div class="logo">
+        <img src="asset/logo_kota_bandung-removebg-preview.png" alt="Logo" width="100">
+        <h1>BandungInsight</h1>
+        </div>
+        <nav>
+        <ul>
+        <li><a href="#hero-section">Home</a></li>
+        <li><a href="#map-section">Map</a></li>
+        <li><a href="#data-section">Data</a></li>
+        <li><a href="#author-section">Author</a></li>
+        <li><a href="#footer">Contact</a></li>
+        </ul>
+        </nav>
+        </div>
+        </header>   
+<!--Hero Section-->    
+<div id="hero-section" class="hero-section">
+    <div class="hero-content">
+    <h1>WebGIS Basis Data Spasial Kota Bandung</h1>
+    <p>Halaman untuk Melakukan Eksplorasi Basis Data Spasial di Kota Bandung</p>
+    <img src="asset/pasundan.jpg"alt="Image 1">
+    </div>
+</div>  
+<!--Map Section-->
+<div id="map-section">
+    <h2>Menjelajahi Ruang dan Waktu di Setiap Sudut Kota Bandung</h2>
+    <div id="map">
+    <!-- akan muncul peta disini -->
+    </div>
+</div>
+<!--Data Section-->
+<div id="data-section">
+    <h2>Eksplorasi Informasi</h2>
+    <div class="container">
+    <div class="column">
+    <div class="data-item">
+         <img src="asset/danaupurba.jpg" alt="Image 1">
+    
+    <div class="description">
+    <h3> Bandung Berdiri di Atas Danau Purba dan Gunung Berapi Mati</h3>
+    <p>Salah satu versi yang paling dikenal menyebutkan bahwa nama
+    Bandung berasal dari kata "bendung" atau "bendungan". Ini merujuk 
+    pada terbentuknya danau purba Bandung akibat letusan Gunung Sunda sekitar
+     50.000 tahun lalu, yang membendung aliran sungai Citarum. Para ahli geologi 
+     percaya bahwa Cekungan Bandung (Bandung Basin) dulunya adalah sebuah danau purba raksasa. 
+     Danau ini terbentuk akibat letusan besar Gunung Sunda sekitar 125.000 hingga 50.000 tahun yang lalu.Letusan ini menyebabkan material vulkanik menutup aliran 
+     akibat tertutupnya aliran ini, air dari sungai-sungai menjadi terjebak dan membentuk Danau Bandung Purba. Peran 
+     Sanghiyang Tikoro  sebagai bukti bahwa lokasi ini menjadi tempat keluarnya air yang terjebak.</p>
+    
+    </div>
+    </div>
+    </div>
+    <div class="column">
+    <div class="data-item">
+        <img src="asset/bandungrimbun.jpg" alt="Image 1">
+
+<div class="description">
+<h3>Bekerja di Jakarta Beristirahat di Bandung</h3>
+<p>Kebanyakan orang lebih memilih sebagai komuter, bekerja dengan gaji setara ibukota tetapi tinggal di wilayah sekitar
+    yang memiliki biaya hidup lebih murah, maka sama halnya dengan Kota Bandung. Menurut beberapa sumber
+    sebagian orang memilih untuk menghindari hiruk pikuk kepadatan aktivitas manusia yang mempunyai lingkungan yang kumuh, kota Bandung masih terjaga keasriannya, polusi udara di Bandung tidak separah di ibukota  karena pola penyebaran industri di kota ini 
+    terkonsentrasi di suatu wilayah yang sama misalnya kawasan Bandung Timur, selain itu ketersediaan transportasi yang memadai. Dari konteks tersebut berkorelasi dengan data spasial penggunaan lahan di kota Bandung dimana permukiman semmkain banyak 
+    menutupi hampir di setiap sisi kota Bandung. Maka, dengan informasi tersebut diharapkan dapat mengelola tata guna lahan menjadi lebih 
+    terarah.</p>
+
+</div>
+</div>
+</div>
+<div class="column">
+<div class="data-item">
+
+<img src="asset/arc.jpeg" alt="Image 1">
+
+<div class="description">
+<h3>Kreatifitas Bandung Tanpa Batas</h3>
+<p>Kota Bandung mendapatkan julukan salah satunya adalah 'Kota Kreatif', karena kota ini tidak hanya mengembangkan seni modern, tetapi juga 
+    berinovasi dalam menggabungkan elemen-elemen tradisional dalam kehidupan urban. Banyak desainer, musisi, dan seniman Bandung yang mengkombinasikan
+    kebudayaan Sunda dengan elemen-elemen modern, menciptakan karya yang fresh namun tetap memiliki akar budaya yang kuat.
+    Contohnya, fashion dengan batik modern, musik dengan sentuhan alat tradisional Sunda, dan kolaborasi seni rupa tradisional dengan teknologi digital. 
+    Dengan integrasi teknologi seperti GIS untuk membantu dalam memberikan informasi dan pemetaan terhadap persebaran lokasi wisata 
+    kreatif maka semkain menarik minat kunjugan turis mancanegara untuk belajar dan eksplorasi kebudayaan di kota
+    Bandung yang pada akhirnya akan membantu dalam meningkatkan perekonomian masyarakat sekitar dan nasional </p>
+
+</div>
+</div>
+</div>
+</div>
+<div class="container">
+<div class="column">
+<div class="data-item">
+
+</div>
+</div>
+</div>
+</div>
+</div>
+<!--Pengenalan Singkat-->
+<div id="author-section">
+    <div class="author-content">
+        <h2>Tentang Pembuat</h2>
+        <img src="asset/formal_salsa.jpg" alt="Profile Picture" class="profile-picture">
+        <div class="author-name">
+        <h3>Salsa Alifia Aurell</h3>
+        </div>
+        <p>Seorang Mahasiswa program studi Sains Informasi Geografi, Universitas Pendidikan Indonesia. 
+            Saat ini sedang menempuh semester 4, fokus studi yaitu di bidang Sistem Informasi Geografi, 
+            Pemetaan, Penginderaan Jauh, dan Survei Pemetaan.</p>
+    </div>
+</div>
+
+<!--Footer-->
+<div id="footer">
+    <div class="footer-content">
+    <h3>Hubungi Saya</h3>
+    <p>Email: salsaalifia123@upi.edu</p>
+    <p>Phone: 0857230966724</p>
+    </div>
+</div>
+
+<!-- Leaflet JS -->
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/leaflet-easybutton@2/src/easy-button.js"></script>
+<script src="https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/Leaflet.fullscreen.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/leaflet.locatecontrol/dist/L.Control.Locate.min.js"></script>
+<script src="https://balladaniel.github.io/leaflet-dataclassification/leaflet-dataclassification.js"></script>
+
+
+<!-- Leaflet CSS -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+
+<!-- Leaflet Fullscreen Plugin CSS -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet.fullscreen/Control.FullScreen.css" />
+
+<!-- Leaflet Locate Control CSS -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet.locatecontrol/dist/L.Control.Locate.min.css" />
+<!-- Your custom scripts -->
+
+<script src="js/script.js"></script>
+
+ <div id="map" style="height: 600px;"></div>
+
+</body>
+</html>

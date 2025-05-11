@@ -1,0 +1,320 @@
+#logo-animasi {
+  /* Atur tinggi area animasi sesuai kebutuhan */
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+}
+
+#logo-animasi img {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: turunNaik 2s infinite alternate;
+}
+
+@keyframes turunNaik {
+  0%   { top: 0; }
+  100% { top: 220px; }
+}
+
+
+/* Style Kerangka Secara Umum */
+html {
+    scroll-behavior: smooth;
+    font-family: 'Times New Roman', Times, serif;
+    caret-color: transparent;
+
+    }
+    body {
+    font-family: 'Times New Roman', Times, serif;
+    font : italic
+     background-color: #000000b6;
+    margin: 0;
+    padding: 0;
+    }
+    /* Seluruh Komponen Pada Header */
+    .logo {
+    display: flex; /* Use flexbox */
+    align-items: center; /* Align items vertically */
+    }
+    .logo img {
+    width: 80px; /* Set the width of the logo */
+    margin-right: 10px; /* Add some space between the image and title */
+    }
+    .logo h1 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+    }
+    header nav {
+    display: flex;
+    justify-content: flex-start;
+    }
+    header nav a {
+    color:#173d4486;
+    text-decoration:white;
+    font-weight: bold;
+    margin: 0 20px;
+    }
+    #navbar {
+        background-color: #000000b6; /* Soft blue color without transparency */
+        color: #fffffff1;
+        padding: 20px 0;
+        box-shadow: 0 2px 4px rgb(255, 255, 255);
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 999;
+        border-bottom: 2px solid #fff8f8;
+        font-family: 'Montserrat', 'Times New Roman', Times, serif;
+        transition: background-color 0.3s ease; /* Smooth transition for background color */
+        }
+        .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+        }
+        .logo h1 {
+        margin: 0;
+        font-size: 24px;
+        font-weight: bold;
+        }
+        nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        }
+        nav ul li {
+        display: inline;
+        margin-left: 20px;
+        }
+        nav ul li:first-child {
+        margin-left: 0;
+        }
+        nav ul li a {
+        color: #ffffff;
+        text-decoration: none;
+        font-size: 16px;
+        position: relative; /* Needed for pseudo-element positioning */
+        }
+        nav ul li a::before {
+        content: '';
+        position: absolute;
+        top: -7px; /* Move the pseudo-element up by half of the hover size */
+        left: -7px; /* Move the pseudo-element left by half of the hover size */
+        width: calc(100% + 14px); /* Expand the width by 14 pixels (7px on each side) */
+        height: calc(100% + 14px); /* Expand the height by 14 pixels (7px on each side) */
+        background-color: #110e04a4; /* Background color without transparency */
+        border-radius: 10px; /* Rounded corners */
+        z-index: -1; /* Behind the text */
+        transition: background-color 0.3s ease; /* Smooth transition for background color */
+        }
+        nav ul li a:hover::before {
+        background-color: #000000; /* Adjusted hover color without transparency */
+        }
+        nav ul li a:hover {
+            color: #ffffff; /* Adjusted font color to match hover color */
+}
+.hero-section {
+    margin-top: 60px; /* Adjust margin to make room for fixed navbar */
+    background-image:
+    url('https://www.tripsavvy.com/thmb/SOnmosQsIiXiHzNonv2BDMGC4n0=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-1004877052-58ce1095ed954946a94477fb25766c0f.jpg'); /* Replace
+    'city-background.jpg' with your image */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #1423317c;
+    }
+    .hero-content {
+    max-width: 1800px;
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, 'Times New Roman', Times, serif;
+color: #E8EBD2;
+}
+
+/* Map Section */
+#map {
+    width: 95%;
+    height: 800px;
+    background-color: rgba(82, 38, 18, 0.644);
+     text-decoration:white;
+    margin: 40px auto; /* Adjusted margin for space */
+    border: 2px solid #ccc; /* Add a border with a subtle color */
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative; /* Relative positioning for child elements */
+    z-index: 1; /* Set z-index to be behind the header */
+}
+#map-section h2 {
+text-align: center;
+margin-top: 20;
+font-size: 28px;
+margin-bottom: 20px;
+}
+
+/* Data Section Styles */
+#data-section {
+    background-color: #161616bb;
+    padding: 60px 0;
+    text-decoration:white;
+    }
+    #data-section .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    justify-content: flex-start;
+    }
+    #data-section h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 40px;
+    clear: both;
+    }
+    .column {
+    flex: 0 0 calc(33.33% - 20px);
+    max-width: calc(33.33% - 20px);
+    margin-bottom: 40px;
+    }
+    .data-item {
+    background-color: rgb(43, 43, 43);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgb(255, 254, 254);
+    overflow: hidden;
+    text-decoration:white;
+    margin: auto 10px;
+    }
+    .data-item img {
+        width: 100%;
+        height: auto;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        }
+        .description {
+        padding: 20px;
+        height: 500px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana,'Times New Roman', Times, serif;
+        }
+        .description h3 {
+        margin-top: 0;
+        font-size: 24px;
+        }
+        .description p {
+        color: #ffffff;
+        font-size: 15px;
+        }
+
+        /* Author Section */
+#author-section {
+    background-color: #f5f5f5;
+    padding: 40px 20px;
+    font-family: 'Montserrat', 'Times New Roman', Times, serif;
+    text-align: justify;
+    }
+    .author-content {
+    max-width: 800px;
+    margin: 0 auto;
+    }
+    .author-content h2 {
+    text-align: center;
+    }
+    .author-name {
+    text-align: center; /* Center-align only the author's name */
+    }
+    .profile-picture {
+    height: 100px;
+    width: auto;
+    border-radius: 50%;
+    margin: 0 auto 20px; /* Center the picture horizontally and add margin at the bottom */
+display: block; /* Ensure it behaves as a block element */
+}
+#footer {
+background-color: #1423317c;
+color: #1a1d01;
+text-align: center;
+padding: 15px;
+justify-content: center;
+font-family: 'Montserrat', 'Times New Roman', Times, serif;
+flex-shrink: 0;
+text-decoration:white;
+}
+
+#footer {
+    background-color: #222222a4;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    font-family: 'Montserrat', 'Times New Roman', Times, serif;
+    flex-shrink: 0;
+    justify-content: center;
+    }
+    // Overlay layer control
+    const overlayMaps = {
+      "Jembatan PT": jembatanPT,
+      "Admin Kelurahan": adminKelurahanAR,
+      "Landcover": landcover,
+    };
+    // Buat kontrol legenda
+    const legend = L.control({ position: 'bottomright' });
+    
+    legend.onAdd = function (map) {
+      const div = L.DomUtil.create('div', 'info legend');
+      div.innerHTML += "<h4>Legenda Landcover</h4>";
+    
+      const categories = [
+        { label: "Hutan", color: "green" },
+        { label: "Permukiman", color: "red" },
+        { label: "Sawah", color: "yellow" },
+        { label: "Perkebunan", color: "orange" },
+        { label: "Air", color: "blue" }
+      ];
+    
+      categories.forEach(item => {
+        div.innerHTML +=
+          <i style="background:${item.color}; width: 18px; height: 18px; float: left; margin-right: 8px; opacity: 0.7;"></i> ${item.label}<br>;
+      });
+    
+      return div;
+    };
+    
+    // Tambahkan ke peta
+    legend.addTo(map);
+    
+    // Control panel di pojok kanan atas
+    L.control.layers(baseMaps, overlayMaps, { position: 'topright', collapsed: false }).addTo(map);
+
+    .info.legend {
+        background: rgb(255, 255, 255);
+        padding: 10px;
+        font-size: 13px;
+        line-height: 18px;
+        color: #000000;
+        box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+        border-radius: 5px;
+      }
+      .legend { 
+        padding: 6px 8px; 
+        background-color: rgba(40, 84, 90, 0.849); 
+        box-shadow: 0 0 15px rgb(255, 255, 255); 
+        border-radius: 5px; 
+    } 
+    .legend div { 
+        width: 30px; 
+        height: 15px; 
+        float: left; 
+        margin-right: 8px; 
+        opacity: 0.7; 
+    } 
+    div.legend.leaflet-control br { 
+        clear: both; 
+    }
